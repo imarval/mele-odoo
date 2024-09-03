@@ -1,5 +1,5 @@
 {
-    'name': 'Mele Conector',
+    'name': 'Mele Odoo Connector',
     'version': '1.0',
     'category': 'Retail',
     'summary': 'Transforma la gestión de tu retail con la integración en tiempo real del potente POS de Mele y Odoo.',
