@@ -13,7 +13,7 @@
     ],
     'images': [
         'static/description/icon.png',
-        'static/description/banner.png',
+        'static/description/banner.jpg',
         'static/images/screenshot1.png',
         'static/images/screenshot2.png',
     ],
