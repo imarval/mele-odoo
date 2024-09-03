@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+    
+        <record id="model_invoice_creator" model="ir.model">
+            <field name="name">invoice.creator</field>
+            <field name="model">invoice.creator</field>
+            <field name="state">manual</field>
+        </record>
+
+        <record id="model_invoice_creator_line" model="ir.model">
+            <field name="name">invoice.creator.line</field>
+            <field name="model">invoice.creator.line</field>
+            <field name="state">manual</field>
+        </record>
+
+
+        <!-- Definición del modelo mele.invoice -->
+        <record id="model_mele_invoice" model="ir.model">
+            <field name="name">mele.invoice</field>
+            <field name="model">mele.invoice</field>
+            <field name="state">manual</field>
+        </record>
+        
+        <!-- Definición del modelo mele.product -->
+        <record id="model_mele_product" model="ir.model">
+            <field name="name">mele.product</field>
+            <field name="model">mele.product</field>
+            <field name="state">manual</field>
+        </record>
+
+        <!-- Definición del modelo mele.stock -->
+        <record id="model_mele_stock" model="ir.model">
+            <field name="name">mele.stock</field>
+            <field name="model">mele.stock</field>
+            <field name="state">manual</field>
+        </record>
+
+        <!-- Definición del modelo mele.stock -->
+        <record id="model_mele_stock_quant" model="ir.model">
+            <field name="name">mele.stock.quant</field>
+            <field name="model">mele.stock.quant</field>
+            <field name="state">manual</field>
+        </record>
+
+
+
+
+
+
+
+
+    <!-- Permisos para el modelo mele.invoice -->
+        <record id="access_invoice_creator" model="ir.model.access">
+            <field name="name">access.invoice.creator</field>
+            <field name="model_id" ref="model_invoice_creator"/>
+            <field name="group_id" ref="base.group_user"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_create" eval="1"/>
+            <field name="perm_unlink" eval="1"/>
+        </record>  
+        
+          <!-- Permisos para el modelo mele.invoice -->
+        <record id="access_invoice_creator_line" model="ir.model.access">
+            <field name="name">access.invoice.creator.line</field>
+            <field name="model_id" ref="model_invoice_creator_line"/>
+            <field name="group_id" ref="base.group_user"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_create" eval="1"/>
+            <field name="perm_unlink" eval="1"/>
+        </record>
+
+        <!-- Permisos para el modelo mele.invoice -->
+        <record id="access_mele_invoice" model="ir.model.access">
+            <field name="name">access_mele_invoice</field>
+            <field name="model_id" ref="model_mele_invoice"/>
+            <field name="group_id" ref="base.group_user"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_create" eval="1"/>
+            <field name="perm_unlink" eval="1"/>
+        </record>
+
+        <!-- Permisos para el modelo mele.product -->
+        <record id="access_mele_product" model="ir.model.access">
+            <field name="name">access_mele_product</field>
+            <field name="model_id" ref="model_mele_product"/>
+            <field name="group_id" ref="base.group_user"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_create" eval="1"/>
+            <field name="perm_unlink" eval="1"/>
+        </record>
+
+          <!-- Permisos para el modelo mele.product -->
+        <record id="access_mele_stock_quant" model="ir.model.access">
+            <field name="name">access_mele_stock_quant</field>
+            <field name="model_id" ref="model_mele_stock_quant"/>
+            <field name="group_id" ref="base.group_user"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_create" eval="1"/>
+            <field name="perm_unlink" eval="1"/>
+        </record>
+
+    </data>
+</odoo>

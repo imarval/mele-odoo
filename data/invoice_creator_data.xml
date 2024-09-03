@@ -1,0 +1,13 @@
+<odoo>
+    <record id="model_invoice_creator" model="ir.model">
+        <field name="name">invoice.creator</field>
+        <field name="model">invoice.creator</field>
+        <field name="state">manual</field>
+    </record>
+
+    <record id="model_invoice_creator_line" model="ir.model">
+        <field name="name">invoice.creator.line</field>
+        <field name="model">invoice.creator.line</field>
+        <field name="state">manual</field>
+    </record>
+</odoo>
