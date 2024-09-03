@@ -14,29 +14,29 @@
         }
         .container {
             width: 80%;
-            margin: auto;
+            margin: 30px auto;
             overflow: hidden;
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
+        .content-table {
+            width: 40%;
+            border-collapse: separate;
+            border-spacing: 10%;
         }
-        .header-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 20px;
+        .content-table td {
+            vertical-align: top;
         }
-        .header-content h3 {
-            margin: 0;
+        .content-table .title {
             font-family: 'avenir-lt-w01_85-heavy1475544', 'avenir-lt-w05_85-heavy', sans-serif;
+            font-size: 1.5em;
             text-align: left;
-            flex: 1;
+            padding: 20px;
         }
-        .header-content img {
-            width: 50%;
+        .content-table .image {
+            text-align: center;
+            padding: 20px;
+        }
+        .content-table .image img {
+            max-width: 100%;
             height: auto;
             border-radius: 8px;
         }
@@ -45,6 +45,7 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
         }
         .main h3 {
             font-family: 'avenir-lt-w01_85-heavy1475544', 'avenir-lt-w05_85-heavy', sans-serif;
@@ -77,16 +78,18 @@
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <div class="header-content">
-            <h3>Optimiza tu gestión de retail con la integración perfecta entre Mele y Odoo</h3>
-            <img src="https://example.com/imagen-portada.jpg" alt="Portada de la integración Mele y Odoo">
-        </div>
-    </div>
-</header>
-
 <div class="container">
+    <table class="content-table">
+        <tr>
+            <td class="title">
+                Optimiza tu gestión de retail con la integración perfecta entre Mele y Odoo
+            </td>
+            <td class="image">
+                <img src="https://example.com/imagen-portada.jpg" alt="Portada de la integración Mele y Odoo">
+            </td>
+        </tr>
+    </table>
+
     <div class="main">
         <h3>¿Qué es el Conector Mele para Odoo?</h3>
         <p>El Conector Mele para Odoo lleva tu experiencia de gestión retail al siguiente nivel al integrar el sofisticado sistema de punto de venta (POS) de Mele con el versátil ERP de Odoo. Diseñado para grandes retailers y pequeños negocios por igual, Mele destaca por su facilidad de uso y sus funcionalidades avanzadas, haciendo de este conector una herramienta esencial para una gestión de retail eficiente y moderna.</p>
@@ -94,19 +97,35 @@
         <img src="https://example.com/imagen-conector.jpg" alt="Conector Mele para Odoo">
         
         <h3>Ventajas clave del Conector</h3>
-        <ul>
-            <li><strong>Integración Fluida:</strong> Une la potencia del POS de Mele con la flexibilidad del ERP de Odoo, garantizando una sincronización precisa y efectiva.</li>
-            <li><strong>Sincronización en Tiempo Real:</strong> Conecta tus ventas en el POS de Mele directamente con Odoo, asegurando que tus datos estén siempre actualizados.</li>
-            <li><strong>Actualización Automática de Productos:</strong> Cambios en Odoo como nombre, precio o stock se reflejan instantáneamente en el POS de Mele, manteniendo la coherencia en tu inventario.</li>
-            <li><strong>Eficiencia Mejorada:</strong> Optimiza la gestión de inventario y ventas con una integración que facilita la administración y reduce los errores manuales.</li>
-        </ul>
-        
-        <img src="https://example.com/imagen-ventajas.jpg" alt="Ventajas del Conector">
+
+        <table class="content-table">
+            <tr>
+                <td class="image">
+                    <img src="https://example.com/imagen-ventajas.jpg" alt="Ventajas del Conector">
+                </td>
+                <td class="image">
+                    <ul>
+                        <li><strong>Integración Fluida:</strong> Une la potencia del POS de Mele con la flexibilidad del ERP de Odoo, garantizando una sincronización precisa y efectiva.</li>
+                        <li><strong>Sincronización en Tiempo Real:</strong> Conecta tus ventas en el POS de Mele directamente con Odoo, asegurando que tus datos estén siempre actualizados.</li>
+                        <li><strong>Actualización Automática de Productos:</strong> Cambios en Odoo como nombre, precio o stock se reflejan instantáneamente en el POS de Mele, manteniendo la coherencia en tu inventario.</li>
+                        <li><strong>Eficiencia Mejorada:</strong> Optimiza la gestión de inventario y ventas con una integración que facilita la administración y reduce los errores manuales.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
         
         <h3>¿Por qué elegir este conector?</h3>
-        <p>Al elegir el Conector Mele para Odoo, maximizarás el potencial de ambas plataformas, mejorando la eficiencia operativa y elevando la experiencia de tus clientes. No más procesos manuales y desactualización; simplemente una sincronización perfecta que te permite enfocarte en lo que realmente importa: hacer crecer tu negocio.</p>
-        
-        <img src="https://example.com/imagen-transforma.jpg" alt="Transformación de la gestión de retail">
+
+        <table class="content-table">
+            <tr>
+                <td class="title">
+                    Al elegir el Conector Mele para Odoo, maximizarás el potencial de ambas plataformas, mejorando la eficiencia operativa y elevando la experiencia de tus clientes. No más procesos manuales y desactualización; simplemente una sincronización perfecta que te permite enfocarte en lo que realmente importa: hacer crecer tu negocio.
+                </td>
+                <td class="image">
+                    <img src="https://example.com/imagen-transforma.jpg" alt="Transformación de la gestión de retail">
+                </td>
+            </tr>
+        </table>
         
         <a href="#" class="cta">Aprovecha el poder combinado de Mele y Odoo para transformar tu gestión de retail hoy mismo.</a>
     </div>
