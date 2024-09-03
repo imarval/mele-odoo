@@ -11,12 +11,7 @@
         'views/invoice_views.xml',
         'views/product_views.xml',
     ],
-    'images': [
-        'static/description/icon.png',
-        'static/description/banner.jpg',
-        'static/images/screenshot1.png',
-        'static/images/screenshot2.png',
-    ],
+    'images': ['static/description/banner.jpg'],
     'installable': True,
     'application': True,
     'price': 982.99,
