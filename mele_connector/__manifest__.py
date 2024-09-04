@@ -14,5 +14,6 @@
     'images': ['static/description/banner.jpg'],
     'installable': True,
     'application': True,
-    'license': 'LGPL-3',
+    'price': 982.99,
+    'currency': 'USD',
 }
